@@ -17,7 +17,7 @@ const cards = [
         software design.
       </>
     ),
-    to: '/docs',
+    to: '/docs/about/introduction',
   },
   {
     title: 'The five principles',
@@ -28,7 +28,7 @@ const cards = [
         software systems.
       </>
     ),
-    to: '/docs/principles',
+    to: '/docs/principles/communicate-locally',
   },
   {
     title: 'Join the community',
@@ -39,7 +39,7 @@ const cards = [
         resilient world.
       </>
     ),
-    to: '/docs/community',
+    to: '/docs/community/get-involved',
   },
 ];
 
