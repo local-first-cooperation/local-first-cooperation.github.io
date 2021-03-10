@@ -67,6 +67,57 @@ const testimonials = [
   },
 ];
 
+const useCases = [
+  {
+    name: 'Collaborative docs',
+    description: 'Work together on documents with others',
+    imageUrl: `img/docs.svg`,
+    to: '/docs/use-cases/collaborative-documents',
+  },
+  {
+    name: 'Factory automation',
+    description: 'Automate manufacturing processes',
+    imageUrl: `img/robotic-arm.svg`,
+    to: '/docs/use-cases/factory-automation',
+  },
+  {
+    name: 'Field workers',
+    description: 'Work together to maintain equipment',
+    imageUrl: `img/worker.svg`,
+    to: '/docs/use-cases/field-workers',
+  },
+  {
+    name: 'Games in LAN',
+    description: 'Play in the LAN, with ultimate performance',
+    imageUrl: `img/gamepad.svg`,
+    to: '/docs/use-cases/games-in-lan',
+  },
+  {
+    name: 'Hospital',
+    description: 'Digitize patient care, with 100% resilience',
+    imageUrl: `img/hospital-bed.svg`,
+    to: '/docs/use-cases/hospital',
+  },
+  {
+    name: 'Local information',
+    description: 'Not quite sure what this is, so just cool',
+    imageUrl: `img/information.svg`,
+    to: '/docs/use-cases/local-information',
+  },
+  {
+    name: 'Smart home',
+    description: 'Automate your home, whilst staying in control',
+    imageUrl: `img/house.svg`,
+    to: '/docs/use-cases/smart-home',
+  },
+  {
+    name: 'Social network',
+    description: 'Share with friends and familiy, with agency',
+    imageUrl: `img/network.svg`,
+    to: '/docs/use-cases/social-network',
+  },
+];
+
 const Card = ({ imageUrl, title, description, to }) => {
   const imgUrl = useBaseUrl(imageUrl);
   return (
@@ -113,6 +164,25 @@ const Testimonial = ({ imageUrl, name, title, quote }) => (
   </div>
 );
 
+const UseCase = ({ name, description, imageUrl, to }) => (
+  <div className="col col--3">
+    <div className={clsx('card', 'shadow--lw', styles.useCase)}>
+      <div>
+        <img className={styles.useCaseImage} src={imageUrl} alt={name} />
+      </div>
+      <div className="card__header">
+        <h4>{name}</h4>
+      </div>
+      <div className="card__body">
+        <p>{description}</p>
+      </div>
+      <div className="card__footer">
+        <a href={to}>Learn more</a>
+      </div>
+    </div>
+  </div>
+);
+
 function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
@@ -147,6 +217,26 @@ function Home() {
             <div className="row">
               {testimonials.map((props, idx) => (
                 <Testimonial key={idx} {...props} />
+              ))}
+            </div>
+          </div>
+        </section>
+        <section className={styles.useCases}>
+          <div className="container">
+            <div className="row">
+              <h2 className={styles.useCasesTitle}>
+                Discover real world use-cases
+              </h2>
+            </div>
+            <div className="row">
+              <p>
+                See how Local-First Cooperation applies to a wide range of
+                use-cases.
+              </p>
+            </div>
+            <div className="row">
+              {useCases.map((props, idx) => (
+                <UseCase key={idx} {...props} />
               ))}
             </div>
           </div>

@@ -57,3 +57,28 @@
   padding: 2rem 0 6rem 0;
   width: 100%;
 }
+
+.useCases {
+  padding: 2rem 0 6rem 0;
+  width: 100%;
+}
+
+.useCasesTitle {
+}
+
+.useCase {
+  margin: 1rem 0;
+  display: flex;
+}
+
+.useCaseImage {
+  width: 50px;
+  height: 50px;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.useCaseName {
+  color: black;
+  margin: 0 0.5rem;
+}

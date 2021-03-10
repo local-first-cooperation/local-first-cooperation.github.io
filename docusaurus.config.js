@@ -54,18 +54,22 @@ module.exports = {
       ],
     },
     footer: {
-      style: 'dark',
+      style: 'light',
       links: [
         {
           title: 'Docs',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/',
+              label: 'About',
+              to: 'docs/about/introduction',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: 'Principles',
+              to: 'docs/principles/communicate-locally',
+            },
+            {
+              label: 'Community',
+              to: 'docs/community/get-involved',
             },
           ],
         },
@@ -73,16 +77,16 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'The plan',
+              to: 'docs/community/plan',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Get involved',
+              to: 'docs/community/get-involved',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Mailing list',
+              href: 'https://groups.google.com/g/local-first-cooperation',
             },
           ],
         },
@@ -100,7 +104,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} the Local-First Cooperation contributor.`,
+      copyright: `Copyright © ${new Date().getFullYear()} the Local-First Cooperation contributors.`,
     },
   },
   presets: [
