@@ -42,5 +42,5 @@ If you want to see this in action, read code, and dive right in, then you can ch
 or you can dip your toe in by reading how little it takes to make the [react-todo collaborative](https://github.com/actyx-contrib/todo-react/pull/1) based on
 [ActyxOS](https://developer.actyx.com/docs/os/general/introduction).
 
-The above is but a brief and incomplete summary of what local-first cooperation entails, please refer to [the principles](principles) for all the details.
+The above is but a brief and incomplete summary of what local-first cooperation entails, please refer to [the principles](../principles/introduction.md) for all the details.
 The following pages in this section place this software creation paradigm on the map relative to reactive, cloud native, edge computing, etc.

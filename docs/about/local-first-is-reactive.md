@@ -3,7 +3,7 @@ id: local-first-is-reactive
 title: Local-First is Reactive
 ---
 
-While the [local-first cooperation principles](principles/index.html) are not the same as the [reactive principles](https://principles.reactive.foundation), there is large inherent overlap.
+While the [local-first cooperation principles](../principles/introduction.md) are not the same as the [reactive principles](https://principles.reactive.foundation), there is large inherent overlap.
 In fact, adhering to local-first cooperation likely results in a reactive application.
 We demonstrate this by going through the reactive principles in the following.
 

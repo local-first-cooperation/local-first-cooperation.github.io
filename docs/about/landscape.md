@@ -34,7 +34,7 @@ All other classes of software benefit greatly from heeding the advice given in t
 - **local collaboration** supports mission critical applications and therefore needs responsiveness, with the added twist of having to satisfy the end-users using locally available resources only — this changes the implementation of elasticity and resilience but not the need to adhere to these principles
 
 Therefore it is not surprising that the local-first cooperation principles have a remarkable overlap with the [reactive principles](https://principles.reactive.foundation/).
-The confluence between local-first and reactive principles is further elaborated in [this article](reactive-edge-native.html).
+The confluence between local-first and reactive principles is further elaborated in [this article](local-first-is-reactive.md).
 
 The main differentiation between **local-first cooperation** and **offline-first** — usually backed by a cloud native application — is that local-first cooperation explicitly demands that devices in close proximity shall be able to cooperate even when all central services are unreachable.
 In contrast, [progressive web apps](https://en.wikipedia.org/wiki/Progressive_web_application) only provide the end-user with the ability to access locally stored information and use features that work on a single device, possibly buffering user inputs for later upload to the cloud backend: the collaborative aspects only work via central resources.
