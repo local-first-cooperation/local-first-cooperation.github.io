@@ -8,17 +8,18 @@ module.exports = {
       'about/glossary',
     ],
     Principles: [
+      'principles/introduction',
       'principles/communicate-locally',
       'principles/autonomy',
       'principles/cooperation',
       'principles/accept-uncertainty',
       'principles/foresee-network-dynamics',
     ],
-    Constraints: [
-      'constraints/hierarchical-systems',
-      'constraints/scoped-consensus',
-      'constraints/communicate-facts',
-      'constraints/information-flow',
+    'Helpful Techniques': [
+      'techniques/hierarchical-systems',
+      'techniques/scoped-consensus',
+      'techniques/communicate-facts',
+      'techniques/information-flow',
     ],
     'Use-Cases': [
       'use-cases/overview',

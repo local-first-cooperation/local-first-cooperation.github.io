@@ -9,12 +9,11 @@ import styled from 'styled-components';
 
 const cards = [
   {
-    title: `The why and the what`,
+    title: `How it works`,
     imageUrl: 'img/plant.svg',
     description: (
       <>
-        Learn about the aspiration and use-cases for this novel paradigm for
-        software design.
+        Uncover the simplicity that follows from building software locally, employing it locally, and maintaining it locally.
       </>
     ),
     to: '/docs/about/introduction',
@@ -24,19 +23,17 @@ const cards = [
     imageUrl: 'img/act.svg',
     description: (
       <>
-        Meet the five design principles on which to build resilient, cooperative
-        software systems.
+        Meet the design principles that guide you towards building resilient and cooperative software systems.
       </>
     ),
-    to: '/docs/principles/communicate-locally',
+    to: '/docs/principles/introduction',
   },
   {
-    title: 'Join the community',
+    title: 'The resilience community',
     imageUrl: 'img/user.svg',
     description: (
       <>
-        Join the community of developers and end-users trying to build a more
-        resilient world.
+        Become part of the effort to make humankind’s use of computers as robust as it should be.
       </>
     ),
     to: '/docs/community/get-involved',
@@ -49,21 +46,88 @@ const testimonials = [
     title: `Professor @ Cambridge`,
     imageUrl:
       'https://v2.docusaurus.io/assets/ideal-img/hector-ramos.28a5b05.200.jpg',
-    quote: `Open source contributions to the React Native docs have skyrocketed after our move to Docusaurus. The docs are now hosted on a small repo in plain markdown, with none of the clutter that a typical static site generator would require. Thanks Slash!`,
+    quote: (
+      <>
+        TODO (also the photograph)
+      </>
+    ),
   },
   {
     name: `Adam Wiggins`,
-    title: `Co-Founder @ Heroku`,
+    title: `Founder @ Heroku`,
     imageUrl:
       'https://v2.docusaurus.io/assets/ideal-img/ricky-vetter.d899907.200.jpg',
-    quote: `Docusaurus has been a great choice for the ReasonML family of projects. It makes our documentation consistent, i18n-friendly, easy to maintain, and friendly for new contributors.`,
-  },
+      quote: (
+        <>
+          TODO (also the photograph)
+        </>
+      ),
+    },
   {
-    name: `Dr. Roland Kuhn`,
-    title: `Co-Founder @ Actyx`,
+    name: `Peter van Hardenberg`,
+    title: `Director @ Ink&Switch`,
     imageUrl:
       'https://v2.docusaurus.io/assets/ideal-img/christopher-chedeau.0290f26.200.jpg',
-    quote: `I've helped open source many projects at Facebook and every one needed a website. They all had very similar constraints: the documentation should be written in markdown and be deployed via GitHub pages. I’m so glad that Docusaurus now exists.`,
+      quote: (
+        <>
+          TODO (also the photograph)
+        </>
+      ),
+    },
+  {
+    name: `Ben Christensen`,
+    title: `Software Engineer @ Facebook`,
+    imageUrl:
+      'https://v2.docusaurus.io/assets/ideal-img/hector-ramos.28a5b05.200.jpg',
+    quote: (
+      <>
+        TODO (also the photograph)
+      </>
+    ),
+  },
+  {
+    name: `Adrian Colyer`,
+    title: `Venture Partner @ Accel`,
+    imageUrl:
+      'https://v2.docusaurus.io/assets/ideal-img/ricky-vetter.d899907.200.jpg',
+      quote: (
+        <>
+          TODO (also the photograph)
+        </>
+      ),
+    },
+  {
+    name: `Dr. Roland Kuhn`,
+    title: `Founder @ Actyx`,
+    imageUrl:
+      'https://v2.docusaurus.io/assets/ideal-img/christopher-chedeau.0290f26.200.jpg',
+      quote: (
+        <>
+          TODO (also the photograph)
+        </>
+      ),
+    },
+  {
+    name: `Jonas Bonér`,
+    title: `Founder @ Lightbend`,
+    imageUrl:
+      'https://v2.docusaurus.io/assets/ideal-img/hector-ramos.28a5b05.200.jpg',
+    quote: (
+      <>
+        TODO (also the photograph)
+      </>
+    ),
+  },
+  {
+    name: `Tyler Jewell`,
+    title: `Managing Director @ Dell Technologies Capital`,
+    imageUrl:
+      'https://v2.docusaurus.io/assets/ideal-img/ricky-vetter.d899907.200.jpg',
+      quote: (
+        <>
+          TODO (also the photograph)
+        </>
+      ),
   },
 ];
 
@@ -122,7 +186,7 @@ const Card = ({ imageUrl, title, description, to }) => {
   const imgUrl = useBaseUrl(imageUrl);
   return (
     <div className="col col--4">
-      <div className="card shadow--lw">
+      <div className={clsx('card', 'shadow--lw', styles.card)} onClick={() => window.location.assign(to)} >
         {imgUrl && (
           <div>
             <img className={styles.cardImage} src={imgUrl} alt={title} />
@@ -189,16 +253,16 @@ function Home() {
   return (
     <Layout
       title={siteConfig.title}
-      description="Local-First Cooperation - Let's build a more resilient world"
+      description="Local-First Cooperation - Build apps for people you care about"
     >
       <header className={clsx('hero', 'hero--primary', styles.heroBanner)}>
         <div className="container">
           <img className={styles.heroLogo} src="/img/logo-full-on-blue.png" />
-          <h1 className="hero__title">Let's build a more resilient world</h1>
+          <h1 className="hero__title">Build apps for people you care about</h1>
           <p className="hero__subtitle">
-            We strive to enable the robust cooperation between nearby computing
-            devices. We are a community of developers and end users developing
-            and applying the local-first cooperation paradigm.
+            You can build collaborative applications for your friends, family, or customers.
+            These applications can work together with other computing devices — from smart home to factory automation.
+            And you can do all of this <i>without using the cloud</i>.
           </p>
         </div>
       </header>

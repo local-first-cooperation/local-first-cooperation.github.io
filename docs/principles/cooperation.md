@@ -4,7 +4,7 @@ title: Design Parts for Cooperation
 sidebar_label: Design for Cooperation
 ---
 
-Based on the [autonomous parts](autonomy.md) discussed in the previous section the point of local-first cooperation is that these parts shall facilitate cooperation between computing devices and their users.
+Based on the [autonomous parts](autonomy) discussed in the previous section the point of local-first cooperation is that these parts shall facilitate cooperation between computing devices and their users.
 The data models and communication protocols need to be designed with this in mind.
 
 There are several established techniques for achieving this, like [conflict-free replicated data types](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type) (CRDT), or [event sourcing](https://martinfowler.com/eaaDev/EventSourcing.html) with [time warp](https://dl.acm.org/doi/10.1145/62297.62392).

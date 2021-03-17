@@ -23,7 +23,7 @@ module.exports = {
           position: 'right',
         },
         {
-          to: 'docs/principles/communicate-locally',
+          to: 'docs/principles/introduction',
           activeBasePath: 'docs/principles/',
           label: 'Principles',
           position: 'right',

@@ -38,6 +38,10 @@
   width: 100%;
 }
 
+.card {
+  cursor: pointer;
+}
+
 .cardImage {
   height: 80px;
   width: 80px;
