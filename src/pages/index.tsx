@@ -129,6 +129,17 @@ const testimonials = [
         </>
       ),
   },
+  {
+    name: `Herb Caudill`,
+    title: `Founder @ DevResults`,
+    imageUrl:
+      'https://v2.docusaurus.io/assets/ideal-img/ricky-vetter.d899907.200.jpg',
+      quote: (
+        <>
+          TODO (also the photograph)
+        </>
+      ),
+  },
 ];
 
 const useCases = [
