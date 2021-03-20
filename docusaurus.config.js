@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Local-First Cooperation',
   tagline: 'Robust cooperation between nearby computing devices',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://local-first-cooperation.org/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',

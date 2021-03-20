@@ -23,3 +23,5 @@ yarn-error.log*
 OLD_CONTENT/
 __auto-releases.yml
 all.log
+
+/.vscode/
