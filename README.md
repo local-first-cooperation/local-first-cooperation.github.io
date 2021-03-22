@@ -26,8 +26,5 @@ This command generates static content into the `build` directory and can be serv
 
 ## Deployment
 
-```console
-GIT_USER=<Your GitHub username> DEPLOYMENT_BRANCH=gh-pages USE_SSH=true npm run deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Pushing to the `master` branch will run a deployment via github actions to update the `gh-pages` branch accordingly.
+Publishing to IPFS needs to be done on your local `ipfs` node: recursively add the `npm run build` result, convert the resulting hash using `ipfs cid base32`, and finally update the link on the website.
