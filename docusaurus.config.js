@@ -1,13 +1,13 @@
 module.exports = {
   title: 'Local-First Cooperation',
   tagline: 'Robust cooperation between nearby computing devices',
-  url: 'https://local-first-cooperation.org/',
+  url: 'https://local-first-cooperation.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'local-first-cooperation', // Usually your GitHub org/user name.
-  projectName: 'local-first-cooperation', // Usually your repo name.
+  projectName: 'local-first-cooperation.github.io', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Local-First Cooperation',
