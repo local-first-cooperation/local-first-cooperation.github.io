@@ -125,7 +125,7 @@ const testimonials = [
       'https://v2.docusaurus.io/assets/ideal-img/ricky-vetter.d899907.200.jpg',
       quote: (
         <>
-          TODO (also the photograph)
+          We need edge computing and super-low latency to make IoT work — and for those we need a unified programming paradigm instead of proprietary niche approaches.
         </>
       ),
   },
