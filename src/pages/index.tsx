@@ -8,7 +8,7 @@ import styles from './index.module.css';
 
 // This is the result of adding the `build/` directory and passing its hash
 // to `ipfs cid base32`.
-const ipfsCid = 'bafybeifjnre4ztf5xnemdnobnzyvvpftgypuvymhjgkzm4l233ixlc4ujm';
+const ipfsCid = 'bafybeieky3lacdpg4c46xne4uuhlpn3io7v7iuvlbkiyibhfdnd4cb2dmq';
 const ipfsLocal = `http://${ipfsCid}.ipfs.localhost:8080`;
 
 const cards = [
