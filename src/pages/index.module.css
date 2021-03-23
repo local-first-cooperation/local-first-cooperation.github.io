@@ -5,8 +5,16 @@
  * and scoped locally.
  */
 
+.ipfs {
+  position: absolute;
+  top: 1rem;
+  right: 3rem;
+  text-align: right;
+}
+
 .heroBanner {
   padding: 5rem 0 10rem 0;
+  position: relative;
 }
 
 @media screen and (max-width: 966px) {
@@ -36,6 +44,7 @@
   align-items: center;
   padding: 2rem 0 4rem 0;
   width: 100%;
+  position: relative;
 }
 
 .card {

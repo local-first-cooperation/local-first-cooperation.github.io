@@ -6,6 +6,12 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './index.module.css';
 
+// This is the result of adding the `build/` directory and passing its hash
+// to `ipfs cid base32`.
+const ipfsCid = 'bafybeifjnre4ztf5xnemdnobnzyvvpftgypuvymhjgkzm4l233ixlc4ujm';
+const ipfsLink = `https://${ipfsCid}.ipfs.cf-ipfs.com`;
+const ipfsLocal = `http://${ipfsCid}.ipfs.localhost:8080`;
+
 const cards = [
   {
     title: `How it works`,
@@ -223,6 +229,10 @@ function Home() {
       description="Local-First Cooperation - Build apps for people you care about"
     >
       <header className={clsx('hero', 'hero--primary', styles.heroBanner)}>
+        <div className={clsx(styles.ipfs)}>
+          You can also find this page <a href={ipfsLink}>on IPFS</a><br/>
+          or on your <a href={ipfsLocal}>local gateway</a>
+        </div>
         <div className="container">
           <img className={styles.heroLogo} src="/img/lfcc-logo-negative.svg" />
           <h1 className="hero__title">Build apps for people you care about</h1>
