@@ -11,7 +11,7 @@ import { Hero } from "../components/Hero";
 const cards = [
   {
     title: `How it works`,
-    imageUrl: "img/plant.svg",
+    imageUrl: "img/how-it-works.svg",
     description: (
       <>
         Uncover the simplicity that follows from building software locally,
@@ -22,7 +22,7 @@ const cards = [
   },
   {
     title: "The five principles",
-    imageUrl: "img/act.svg",
+    imageUrl: "img/five-principles.svg",
     description: (
       <>
         Meet the design principles that guide you towards building resilient and
@@ -33,7 +33,7 @@ const cards = [
   },
   {
     title: "The resilience community",
-    imageUrl: "img/user.svg",
+    imageUrl: "img/community.svg",
     description: (
       <>
         Become part of the effort to make humankind’s use of computers as robust
@@ -107,43 +107,43 @@ const useCases = [
   {
     name: "Factory automation",
     description: "Automate manufacturing processes",
-    imageUrl: `img/robotic-arm.svg`,
+    imageUrl: `img/factory-automation.svg`,
     to: "/docs/use-cases/factory-automation",
   },
   {
     name: "Field workers",
     description: "Work together to maintain equipment",
-    imageUrl: `img/worker.svg`,
+    imageUrl: `img/factory-worker.svg`,
     to: "/docs/use-cases/field-workers",
   },
   {
     name: "Games in LAN",
     description: "Play in the LAN, with ultimate performance",
-    imageUrl: `img/gamepad.svg`,
+    imageUrl: `img/lan-gaming.svg`,
     to: "/docs/use-cases/games-in-lan",
   },
   {
     name: "Hospital",
     description: "Digitize patient care, with 100% resilience",
-    imageUrl: `img/hospital-bed.svg`,
+    imageUrl: `img/hospital.svg`,
     to: "/docs/use-cases/hospital",
   },
   {
     name: "Local information",
     description: "Not quite sure what this is, so just cool",
-    imageUrl: `img/information.svg`,
+    imageUrl: `img/local-info.svg`,
     to: "/docs/use-cases/local-information",
   },
   {
     name: "Smart home",
     description: "Automate your home, whilst staying in control",
-    imageUrl: `img/house.svg`,
+    imageUrl: `img/smart-home.svg`,
     to: "/docs/use-cases/smart-home",
   },
   {
     name: "Social network",
     description: "Share with friends and familiy, with agency",
-    imageUrl: `img/network.svg`,
+    imageUrl: `img/social-network.svg`,
     to: "/docs/use-cases/social-network",
   },
 ];
