@@ -42,101 +42,50 @@ const cards = [
 
 const testimonials = [
   {
-    name: `Dr. Martin Kleppmann`,
-    title: `Professor @ Cambridge`,
-    imageUrl:
-      'https://v2.docusaurus.io/assets/ideal-img/hector-ramos.28a5b05.200.jpg',
-    quote: (
-      <>
-        TODO (also the photograph)
-      </>
-    ),
-  },
-  {
-    name: `Adam Wiggins`,
-    title: `Founder @ Heroku`,
-    imageUrl:
-      'https://v2.docusaurus.io/assets/ideal-img/ricky-vetter.d899907.200.jpg',
-      quote: (
-        <>
-          TODO (also the photograph)
-        </>
-      ),
-    },
-  {
     name: `Peter van Hardenberg`,
     title: `Director @ Ink&Switch`,
-    imageUrl:
-      'https://v2.docusaurus.io/assets/ideal-img/christopher-chedeau.0290f26.200.jpg',
-      quote: (
-        <>
-          TODO (also the photograph)
-        </>
-      ),
-    },
-  {
-    name: `Ben Christensen`,
-    title: `Software Engineer @ Facebook`,
-    imageUrl:
-      'https://v2.docusaurus.io/assets/ideal-img/hector-ramos.28a5b05.200.jpg',
+    imageUrl: 'img/people/peter.jpg',
     quote: (
       <>
-        TODO (also the photograph)
+        Software today is not fit to entrust our most valuable ideas. The cloud is too
+        often unavailable in our sheds, workshops, and kitchens. Creative projects too
+        often outlast the SaaS software that hosts them. Our tools for thought will
+        inevitably become local-first.
       </>
     ),
   },
-  {
-    name: `Adrian Colyer`,
-    title: `Venture Partner @ Accel`,
-    imageUrl:
-      'https://v2.docusaurus.io/assets/ideal-img/ricky-vetter.d899907.200.jpg',
-      quote: (
-        <>
-          TODO (also the photograph)
-        </>
-      ),
-    },
   {
     name: `Dr. Roland Kuhn`,
     title: `Founder @ Actyx`,
-    imageUrl:
-      'https://v2.docusaurus.io/assets/ideal-img/christopher-chedeau.0290f26.200.jpg',
-      quote: (
-        <>
-          TODO (also the photograph)
-        </>
-      ),
-    },
+    imageUrl: 'img/people/roland.jpg',
+    quote: (
+      <>
+        We are currently putting all eggs in too few huge baskets: the internet and our
+        usage of computers are very scalable but not resilient. Therefore we need to
+        focus on solving local problems with local infrastructure, local-first and
+        cooperative.
+      </>
+    ),
+  },
   {
     name: `Jonas Bonér`,
     title: `Founder @ Lightbend`,
-    imageUrl:
-      'https://v2.docusaurus.io/assets/ideal-img/hector-ramos.28a5b05.200.jpg',
+    imageUrl: 'img/people/jonas.jpg',
     quote: (
       <>
-        TODO (also the photograph)
+        I’ve always been interested in autonomous components and how they work together,
+        mimicking nature. We can improve ourselves and society by building software this way.
       </>
     ),
   },
   {
     name: `Tyler Jewell`,
     title: `Managing Director @ Dell Technologies Capital`,
-    imageUrl:
-      'https://v2.docusaurus.io/assets/ideal-img/ricky-vetter.d899907.200.jpg',
+    imageUrl: 'img/people/tyler.jpeg',
       quote: (
         <>
-          We need edge computing and super-low latency to make IoT work — and for those we need a unified programming paradigm instead of proprietary niche approaches.
-        </>
-      ),
-  },
-  {
-    name: `Herb Caudill`,
-    title: `Founder @ DevResults`,
-    imageUrl:
-      'https://v2.docusaurus.io/assets/ideal-img/ricky-vetter.d899907.200.jpg',
-      quote: (
-        <>
-          TODO (also the photograph)
+          We need edge computing and super-low latency to make IoT work — and for those we need
+          a unified programming paradigm instead of proprietary niche approaches.
         </>
       ),
   },
@@ -219,7 +168,7 @@ const Card = ({ imageUrl, title, description, to }) => {
 
 const Testimonial = ({ imageUrl, name, title, quote }) => (
   <div className="col col--4">
-    <div className="avatar avatar--vertical">
+    <div className={clsx('avatar avatar--vertical', styles.avatar)}>
       <img
         className={clsx(
           'avatar__photo',

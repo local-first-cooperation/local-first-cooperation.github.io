@@ -3,7 +3,7 @@ layout: default
 title: Local-First Cooperation
 ---
 
-# Glossary of useful techniques
+## Glossary of useful techniques
 
 - **CRDTs**: [conflict-free replicated data types](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type) provide update operations that are designed for merging when devices synchronise
 
