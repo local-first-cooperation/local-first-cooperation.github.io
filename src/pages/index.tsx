@@ -5,8 +5,6 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./index.module.css";
-import styled from "styled-components";
-import { Hero } from "../components/Hero";
 
 const cards = [
   {
@@ -226,7 +224,14 @@ function Home() {
     >
       <header className={clsx("hero", "hero--primary", styles.heroBanner)}>
         <div className="container">
-          <Hero />
+          <img className={styles.heroLogo} src="/img/lfcc-logo-negative.svg" />
+          <h1 className="hero__title">Build apps for people you care about</h1>
+          <p className="hero__subtitle">
+            You can build collaborative applications for your friends, family,
+            or customers. These applications can work together with other
+            computing devices — from smart home to factory automation. And you
+            can do all of this <i>without using the cloud</i>.
+          </p>
         </div>
       </header>
       <main>
