@@ -9,6 +9,11 @@ module.exports = {
   organizationName: 'local-first-cooperation', // Usually your GitHub org/user name.
   projectName: 'local-first-cooperation.github.io', // Usually your repo name.
   themeConfig: {
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
+    },
     navbar: {
       title: 'Local-First Cooperation',
       logo: {
