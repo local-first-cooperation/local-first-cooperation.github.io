@@ -13,7 +13,7 @@ module.exports = {
       title: 'Local-First Cooperation',
       logo: {
         alt: 'Local-First Cooperation Logo',
-        src: 'img/logo.png',
+        src: 'img/lfcc-logo.svg',
       },
       items: [
         {
@@ -41,7 +41,8 @@ module.exports = {
           position: 'right',
         },
         {
-          href: 'https://github.com/local-first-cooperation/local-first-cooperation.github.io',
+          href:
+            'https://github.com/local-first-cooperation/local-first-cooperation.github.io',
           label: 'GitHub',
           position: 'right',
         },
@@ -105,13 +106,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-          'https://github.com/local-first-cooperation/local-first-cooperation.github.io/edit/master/',
+            'https://github.com/local-first-cooperation/local-first-cooperation.github.io/edit/master/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-          'https://github.com/local-first-cooperation/local-first-cooperation.github.io/edit/master/blog/',
+            'https://github.com/local-first-cooperation/local-first-cooperation.github.io/edit/master/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
