@@ -9,7 +9,6 @@ import styles from './index.module.css';
 // This is the result of adding the `build/` directory and passing its hash
 // to `ipfs cid base32`.
 const ipfsCid = 'bafybeifjnre4ztf5xnemdnobnzyvvpftgypuvymhjgkzm4l233ixlc4ujm';
-const ipfsLink = `https://${ipfsCid}.ipfs.cf-ipfs.com`;
 const ipfsLocal = `http://${ipfsCid}.ipfs.localhost:8080`;
 
 const cards = [
@@ -59,6 +58,19 @@ const testimonials = [
         is too often unavailable in our sheds, workshops, and kitchens. Creative
         projects too often outlast the SaaS software that hosts them. Our tools
         for thought will inevitably become local-first.
+      </>
+    ),
+  },
+  {
+    name: `Dr. Martin Kleppmann`,
+    title: `Professor @ Cambridge`,
+    imageUrl: 'img/people/martin.jpg',
+    quote: (
+      <>
+        Cloud software like Google Docs is very convenient, but it could be taken
+        away from you any moment. If your data is important to you, it should be
+        stored locally on your computer, where nobody can take it away. We can have
+        both real-time collaboration and local storage.
       </>
     ),
   },
@@ -230,8 +242,8 @@ function Home() {
     >
       <header className={clsx('hero', 'hero--primary', styles.heroBanner)}>
         <div className={clsx(styles.ipfs)}>
-          You can also find this page <a href={ipfsLink}>on IPFS</a><br/>
-          or on your <a href={ipfsLocal}>local gateway</a>
+          You can also find this page <a href={ipfsLocal}>on IPFS</a><br/>
+          see also <a href="docs/ipfs-gateway">the installation instructions</a>
         </div>
         <div className="container">
           <img className={styles.heroLogo} src="/img/lfcc-logo-negative.svg" />
