@@ -1,44 +1,44 @@
-import React from "react";
-import clsx from "clsx";
-import Layout from "@theme/Layout";
-import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import useBaseUrl from "@docusaurus/useBaseUrl";
-import styles from "./index.module.css";
+import React from 'react';
+import clsx from 'clsx';
+import Layout from '@theme/Layout';
+import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import styles from './index.module.css';
 
 const cards = [
   {
     title: `How it works`,
-    imageUrl: "img/how-it-works.svg",
+    imageUrl: 'img/how-it-works.svg',
     description: (
       <>
         Uncover the simplicity that follows from building software locally,
         employing it locally, and maintaining it locally.
       </>
     ),
-    to: "/docs/about/introduction",
+    to: '/docs/about/introduction',
   },
   {
-    title: "The five principles",
-    imageUrl: "img/five-principles.svg",
+    title: 'The five principles',
+    imageUrl: 'img/five-principles.svg',
     description: (
       <>
         Meet the design principles that guide you towards building resilient and
         cooperative software systems.
       </>
     ),
-    to: "/docs/principles/introduction",
+    to: '/docs/principles/introduction',
   },
   {
-    title: "The resilience community",
-    imageUrl: "img/community.svg",
+    title: 'The resilience community',
+    imageUrl: 'img/community.svg',
     description: (
       <>
         Become part of the effort to make humankind’s use of computers as robust
         as it should be.
       </>
     ),
-    to: "/docs/community/get-involved",
+    to: '/docs/community/get-involved',
   },
 ];
 
@@ -46,7 +46,7 @@ const testimonials = [
   {
     name: `Peter van Hardenberg`,
     title: `Director @ Ink&Switch`,
-    imageUrl: "img/people/peter.jpg",
+    imageUrl: 'img/people/peter.jpg',
     quote: (
       <>
         Software today is not fit to entrust our most valuable ideas. The cloud
@@ -59,7 +59,7 @@ const testimonials = [
   {
     name: `Dr. Roland Kuhn`,
     title: `Founder @ Actyx`,
-    imageUrl: "img/people/roland.jpg",
+    imageUrl: 'img/people/roland.jpg',
     quote: (
       <>
         We are currently putting all eggs in too few huge baskets: the internet
@@ -72,7 +72,7 @@ const testimonials = [
   {
     name: `Jonas Bonér`,
     title: `Founder @ Lightbend`,
-    imageUrl: "img/people/jonas.jpg",
+    imageUrl: 'img/people/jonas.jpg',
     quote: (
       <>
         I’ve always been interested in autonomous components and how they work
@@ -84,7 +84,7 @@ const testimonials = [
   {
     name: `Tyler Jewell`,
     title: `Managing Director @ Dell Technologies Capital`,
-    imageUrl: "img/people/tyler.jpeg",
+    imageUrl: 'img/people/tyler.jpeg',
     quote: (
       <>
         We need edge computing and super-low latency to make IoT work — and for
@@ -97,52 +97,52 @@ const testimonials = [
 
 const useCases = [
   {
-    name: "Collaborative docs",
-    description: "Work together on documents with others",
+    name: 'Collaborative docs',
+    description: 'Work together on documents with others',
     imageUrl: `img/docs.svg`,
-    to: "/docs/use-cases/collaborative-documents",
+    to: '/docs/use-cases/collaborative-documents',
   },
   {
-    name: "Factory automation",
-    description: "Automate manufacturing processes",
+    name: 'Factory automation',
+    description: 'Automate manufacturing processes',
     imageUrl: `img/factory-automation.svg`,
-    to: "/docs/use-cases/factory-automation",
+    to: '/docs/use-cases/factory-automation',
   },
   {
-    name: "Field workers",
-    description: "Work together to maintain equipment",
+    name: 'Field workers',
+    description: 'Work together to maintain equipment',
     imageUrl: `img/factory-worker.svg`,
-    to: "/docs/use-cases/field-workers",
+    to: '/docs/use-cases/field-workers',
   },
   {
-    name: "Games in LAN",
-    description: "Play in the LAN, with ultimate performance",
+    name: 'Games in LAN',
+    description: 'Play in the LAN, with ultimate performance',
     imageUrl: `img/lan-gaming.svg`,
-    to: "/docs/use-cases/games-in-lan",
+    to: '/docs/use-cases/games-in-lan',
   },
   {
-    name: "Hospital",
-    description: "Digitize patient care, with 100% resilience",
+    name: 'Hospital',
+    description: 'Digitize patient care, with 100% resilience',
     imageUrl: `img/hospital.svg`,
-    to: "/docs/use-cases/hospital",
+    to: '/docs/use-cases/hospital',
   },
   {
-    name: "Local information",
-    description: "Not quite sure what this is, so just cool",
+    name: 'Local information',
+    description: 'Not quite sure what this is, so just cool',
     imageUrl: `img/local-info.svg`,
-    to: "/docs/use-cases/local-information",
+    to: '/docs/use-cases/local-information',
   },
   {
-    name: "Smart home",
-    description: "Automate your home, whilst staying in control",
+    name: 'Smart home',
+    description: 'Automate your home, whilst staying in control',
     imageUrl: `img/smart-home.svg`,
-    to: "/docs/use-cases/smart-home",
+    to: '/docs/use-cases/smart-home',
   },
   {
-    name: "Social network",
-    description: "Share with friends and familiy, with agency",
+    name: 'Social network',
+    description: 'Share with friends and familiy, with agency',
     imageUrl: `img/social-network.svg`,
-    to: "/docs/use-cases/social-network",
+    to: '/docs/use-cases/social-network',
   },
 ];
 
@@ -151,7 +151,7 @@ const Card = ({ imageUrl, title, description, to }) => {
   return (
     <div className="col col--4">
       <div
-        className={clsx("card", "shadow--lw", styles.card)}
+        className={clsx('card', 'shadow--lw', styles.card)}
         onClick={() => window.location.assign(to)}
       >
         {imgUrl && (
@@ -175,11 +175,11 @@ const Card = ({ imageUrl, title, description, to }) => {
 
 const Testimonial = ({ imageUrl, name, title, quote }) => (
   <div className="col col--4">
-    <div className={clsx("avatar avatar--vertical", styles.avatar)}>
+    <div className={clsx('avatar avatar--vertical', styles.avatar)}>
       <img
         className={clsx(
-          "avatar__photo",
-          "avatar__photo--xl",
+          'avatar__photo',
+          'avatar__photo--xl',
           styles.testimonialImage
         )}
         src={imageUrl}
@@ -187,7 +187,7 @@ const Testimonial = ({ imageUrl, name, title, quote }) => (
       <div className="avatar__intro">
         <h4 className="avatar__name">{name}</h4>
         <small className="avatar__subtitle">{title}</small>
-        <small className={clsx("avatar__subtitle", styles.testimonialQuote)}>
+        <small className={clsx('avatar__subtitle', styles.testimonialQuote)}>
           {quote}
         </small>
       </div>
@@ -197,7 +197,7 @@ const Testimonial = ({ imageUrl, name, title, quote }) => (
 
 const UseCase = ({ name, description, imageUrl, to }) => (
   <div className="col col--3">
-    <div className={clsx("card", "shadow--lw", styles.useCase)}>
+    <div className={clsx('card', 'shadow--lw', styles.useCase)}>
       <div>
         <img className={styles.useCaseImage} src={imageUrl} alt={name} />
       </div>
@@ -222,7 +222,7 @@ function Home() {
       title={siteConfig.title}
       description="Local-First Cooperation - Build apps for people you care about"
     >
-      <header className={clsx("hero", "hero--primary", styles.heroBanner)}>
+      <header className={clsx('hero', 'hero--primary', styles.heroBanner)}>
         <div className="container">
           <img className={styles.heroLogo} src="/img/lfcc-logo-negative.svg" />
           <h1 className="hero__title">Build apps for people you care about</h1>

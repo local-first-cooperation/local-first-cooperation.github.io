@@ -1,96 +1,96 @@
 module.exports = {
-  title: "Local-First Cooperation",
-  tagline: "Robust cooperation between nearby computing devices",
-  url: "https://local-first-cooperation.org",
-  baseUrl: "/",
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
-  organizationName: "local-first-cooperation", // Usually your GitHub org/user name.
-  projectName: "local-first-cooperation.github.io", // Usually your repo name.
+  title: 'Local-First Cooperation',
+  tagline: 'Robust cooperation between nearby computing devices',
+  url: 'https://local-first-cooperation.org',
+  baseUrl: '/',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+  favicon: 'img/favicon.ico',
+  organizationName: 'local-first-cooperation', // Usually your GitHub org/user name.
+  projectName: 'local-first-cooperation.github.io', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: "Local-First Cooperation",
+      title: 'Local-First Cooperation',
       logo: {
-        alt: "Local-First Cooperation Logo",
-        src: "img/lfcc-logo.svg",
+        alt: 'Local-First Cooperation Logo',
+        src: 'img/lfcc-logo.svg',
       },
       items: [
         {
-          to: "docs/about/introduction",
-          activeBasePath: "docs/about/",
-          label: "About",
-          position: "right",
+          to: 'docs/about/introduction',
+          activeBasePath: 'docs/about/',
+          label: 'About',
+          position: 'right',
         },
         {
-          to: "docs/principles/introduction",
-          activeBasePath: "docs/principles/",
-          label: "Principles",
-          position: "right",
+          to: 'docs/principles/introduction',
+          activeBasePath: 'docs/principles/',
+          label: 'Principles',
+          position: 'right',
         },
         {
-          to: "docs/use-cases/overview",
-          activeBasePath: "docs/use-cases/",
-          label: "Use-Cases",
-          position: "right",
+          to: 'docs/use-cases/overview',
+          activeBasePath: 'docs/use-cases/',
+          label: 'Use-Cases',
+          position: 'right',
         },
         {
-          to: "docs/community/plan",
-          activeBasePath: "docs/community",
-          label: "Community",
-          position: "right",
+          to: 'docs/community/plan',
+          activeBasePath: 'docs/community',
+          label: 'Community',
+          position: 'right',
         },
         {
           href:
-            "https://github.com/local-first-cooperation/local-first-cooperation.github.io",
-          label: "GitHub",
-          position: "right",
+            'https://github.com/local-first-cooperation/local-first-cooperation.github.io',
+          label: 'GitHub',
+          position: 'right',
         },
       ],
     },
     footer: {
-      style: "light",
+      style: 'light',
       links: [
         {
-          title: "Docs",
+          title: 'Docs',
           items: [
             {
-              label: "About",
-              to: "docs/about/introduction",
+              label: 'About',
+              to: 'docs/about/introduction',
             },
             {
-              label: "Principles",
-              to: "docs/principles/communicate-locally",
+              label: 'Principles',
+              to: 'docs/principles/communicate-locally',
             },
             {
-              label: "Community",
-              to: "docs/community/get-involved",
+              label: 'Community',
+              to: 'docs/community/get-involved',
             },
           ],
         },
         {
-          title: "Community",
+          title: 'Community',
           items: [
             {
-              label: "The plan",
-              to: "docs/community/plan",
+              label: 'The plan',
+              to: 'docs/community/plan',
             },
             {
-              label: "Get involved",
-              to: "docs/community/get-involved",
+              label: 'Get involved',
+              to: 'docs/community/get-involved',
             },
             {
-              label: "Mailing list",
-              href: "https://groups.google.com/g/local-first-cooperation",
+              label: 'Mailing list',
+              href: 'https://groups.google.com/g/local-first-cooperation',
             },
           ],
         },
         {
-          title: "More",
+          title: 'More',
           items: [
             {
-              label: "GitHub",
-              href: "https://github.com/local-first-cooperation",
+              label: 'GitHub',
+              href: 'https://github.com/local-first-cooperation',
             },
           ],
         },
@@ -100,22 +100,22 @@ module.exports = {
   },
   presets: [
     [
-      "@docusaurus/preset-classic",
+      '@docusaurus/preset-classic',
       {
         docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
+          sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            "https://github.com/local-first-cooperation/local-first-cooperation.github.io/edit/master/",
+            'https://github.com/local-first-cooperation/local-first-cooperation.github.io/edit/master/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            "https://github.com/local-first-cooperation/local-first-cooperation.github.io/edit/master/blog/",
+            'https://github.com/local-first-cooperation/local-first-cooperation.github.io/edit/master/blog/',
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: require.resolve('./src/css/custom.css'),
         },
       },
     ],
