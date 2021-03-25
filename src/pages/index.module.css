@@ -81,13 +81,6 @@
   width: 100%;
 }
 
-@media screen and (max-width: 966px) {
-  .useCases {
-    /* padding: 3rem 1rem; */
-  }
-
-}
-
 .useCase {
   margin: 1rem 0;
   display: flex;
