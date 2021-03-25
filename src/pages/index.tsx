@@ -291,15 +291,19 @@ function Home() {
         <section className={styles.useCases}>
           <div className="container">
             <div className="row">
-              <h2 className={styles.useCasesTitle}>
-                Discover real world use-cases
-              </h2>
+              <div className="col">
+                <h2 className={styles.useCasesTitle}>
+                  Discover real world use-cases
+                </h2>
+              </div>
             </div>
             <div className="row">
-              <p>
-                See how Local-First Cooperation applies to a wide range of
-                use-cases.
-              </p>
+              <div className="col">
+                <p>
+                  See how Local-First Cooperation applies to a wide range of
+                  use-cases.
+                </p>
+              </div>
             </div>
             <div className="row">
               {useCases.map((props, idx) => (

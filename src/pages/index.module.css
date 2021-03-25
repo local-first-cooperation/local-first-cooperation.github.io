@@ -19,7 +19,11 @@
 
 @media screen and (max-width: 966px) {
   .heroBanner {
-    padding: 3rem 2rem;
+    padding: 3rem 1rem;
+    padding-bottom: 8rem;
+  }
+  .card {
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -29,9 +33,6 @@
 }
 
 @media screen and (max-width: 600px) {
-  .heroLogo {
-    max-width: 100%;
-  }
 }
 
 .buttons {
@@ -78,6 +79,13 @@
 .useCases {
   padding: 2rem 0 6rem 0;
   width: 100%;
+}
+
+@media screen and (max-width: 966px) {
+  .useCases {
+    /* padding: 3rem 1rem; */
+  }
+
 }
 
 .useCase {
