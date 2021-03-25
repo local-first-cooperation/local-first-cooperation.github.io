@@ -63,7 +63,7 @@ const testimonials = [
   },
   {
     name: `Dr. Martin Kleppmann`,
-    title: `Professor @ Cambridge`,
+    title: `Professor @ Cambridge University`,
     imageUrl: 'img/people/martin.jpg',
     quote: (
       <>
@@ -108,6 +108,19 @@ const testimonials = [
         We need edge computing and super-low latency to make IoT work — and for
         those we need a unified programming paradigm instead of proprietary
         niche approaches.
+      </>
+    ),
+  },
+  {
+    name: `Herb Caudill`,
+    title: `Founder @ DevResults`,
+    imageUrl: 'img/people/herb.jpg',
+    quote: (
+      <>
+        Local-first is a win for users, because they have control and ownership over
+        their data, and they can access it when they're offline. And for software
+        providers like me, it's also a win to take server infrastructure and server
+        codebase out of the equation.
       </>
     ),
   },
