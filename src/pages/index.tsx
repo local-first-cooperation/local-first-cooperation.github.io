@@ -146,8 +146,8 @@ const useCases = [
     to: '/docs/use-cases/field-workers',
   },
   {
-    name: 'Games in LAN',
-    description: 'Play in the LAN, with ultimate performance',
+    name: 'Games on LAN',
+    description: 'Play on the LAN, with ultimate performance',
     imageUrl: `img/lan-gaming.svg`,
     to: '/docs/use-cases/games-in-lan',
   },
