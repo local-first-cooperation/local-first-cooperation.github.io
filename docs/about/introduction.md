@@ -3,23 +3,23 @@ id: introduction
 title: Introduction
 ---
 
-Imagine you want to build an application through which two persons can work together on a document, for example a workflow.
-Perhaps there is some “thing” that you want to work with as well, like getting temperature readings, unlocking a door, or supervising a machine in a factory.
-So you start writing down how that workflow should evolve, you subscribe to data input streams from your connected things, and you implement the logic for each step of the process.
+Imagine you want to build an application through which two people can work together on a document, for example a workflow.
+Perhaps there is some “thing” that you want to work with as well, like a temperature sensor, unlocking a door, or supervising a machine in a factory.
+So you start writing down how that workflow should evolve, you subscribe to data input streams from your connected devices, and you implement the logic for each step of the process.
 Of course there’s a UI as well, so you pick up your favourite frontend tooling and create that.
 
-And now imagine that you take the resulting application — its process logic and UI components — and deploy it directly on two phones and one Raspberry Pi, nothing else is involved.
+Now imagine that you take the resulting application — its process logic and UI components — and deploy it directly on two phones and one Raspberry Pi, nothing else is involved.
 
 This is the idea of local-first cooperation.
 The only requirement for computing devices to work together is that they can exchange information with one another, be that over wifi, bluetooth, LAN, or ultra-wide band.
 We have become used to putting everything into centrally managed places like the cloud or a local data centre, but that is not necessary, and it is not always helpful.
 
 We now have tools like decentralised logs (chains of blocks, like blockchain but without the overhead of proof of work) or conflict-free replicated data types (CRDTs).
-With these tools we can build collaborative apps and deploy them like SaaS, but based on local devices instead of someone else’s server farm.
-This has the advantage of much lower cost, since the end users supply the backing hardware as well as the needed maintenance — everybody cares well for their smartphone!
-It also uses existing computing power much more efficiently, the end users would in any case need to supply electricity for running the UI.
+With these tools we can build collaborative apps and deploy them like SaaS solutions, but based on local devices instead of someone else’s server farm.
+This has the advantage of much lower cost, since the end users supply and maintain the hardware — everybody looks after their smartphone!
+It also uses existing computing power much more efficiently, the end users are already paying for the electricity that powers their device.
 
-Besides lower operating cost, the system’s data are stored on the end users’ devices, shared only with other people for the purpose of working together;
+Besides lower operating cost, the system’s data is stored on the end users’ devices, shared only with other people for the purpose of working together;
 this much improved privacy makes end users happy and frees us from having to provide corresponding storage capacity.
 Another great boon to end users is that software built in this fashion will remain maximally useful independent of internet connectivity:
 the only thing that needs to work for local data access is the user’s device, and the only thing needed for collaboration is communication with another user’s device.
