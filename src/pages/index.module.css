@@ -33,6 +33,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  .ipfs {
+    display: none;
+  }
 }
 
 .buttons {
